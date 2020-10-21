@@ -1,0 +1,86 @@
+.container-upload_image {
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 469px;
+    justify-content: center;
+    position: relative;
+    width: 402px;
+    .title {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        justify-content: center;
+        letter-spacing: -0.035em;
+        position: absolute;
+        top: 36px;
+        h1 {
+            color: #4F4F4F;
+            font-size: 18px;
+            font-style: normal;
+            line-height: 27px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #828282;
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+    .drag-drop-img {
+        align-items: center;
+        background: #F6F8FB;
+        border: 2px dashed #97BEF4;
+        border-radius: 12px;
+        color: #BDBDBD;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        height: 218.9px;
+        justify-content: center;
+        letter-spacing: -0.035em;
+        line-height: 18px;
+        position: absolute;
+        top: 124px;
+        width: 338px;
+        .img {
+            margin-bottom: 30px;
+        }
+    }
+    .choose-file {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 500;
+        justify-content: center;
+        letter-spacing: -0.035em;
+        position: absolute;
+        top: 361px;
+        p {
+            color: #BDBDBD;
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        .btn-upload-file {
+            background: #2F80ED;
+            border: none;
+            border-radius: 8px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 12px;
+            height: 31.98px;
+            line-height: normal;
+            outline: none;
+            width: 101px;
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+    }
+}
