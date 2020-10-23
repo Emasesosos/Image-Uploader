@@ -1,0 +1,58 @@
+.uploading {
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 143.57px;
+    justify-content: center;
+    position: relative;
+    width: 400.36px;
+    .uploading-name {
+        color: #4F4F4F;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        height: 27px;
+        left: 32px;
+        letter-spacing: -0.035em;
+        line-height: 27px;
+        position: absolute;
+        top: 36px;
+        width: 100px;
+    }
+    .line-base {
+        background: #F2F2F2;
+        border-radius: 8px;
+        height: 6px;
+        position: absolute;
+        top: 93.74px;
+        width: 340.71px;
+    }
+    .line {
+        background: #2F80ED;
+        border-radius: 8px;
+        height: 6px;
+        left: 32px;
+        position: absolute;
+        top: 93.74px;
+        width: 100.93px;
+        -webkit-animation-name: "slide";
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+}
+
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(0px);
+    }
+    50% {
+        -webkit-transform: translateX(240px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
