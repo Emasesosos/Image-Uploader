@@ -1,17 +1,17 @@
-export const fileUpload = async (file) => {
+export const fileUpload = async(file) => {
 
     const cloudUrl = 'https://api.cloudinary.com/v1_1/emasesosos/upload';
 
     const formData = new FormData();
-    formData.append('upload_preset', 'react-journal');
+    formData.append('upload_preset', 'react-iua');
     formData.append('file', file);
 
     try {
-        const resp = await fetch(cloudUrl,{
+        const resp = await fetch(cloudUrl, {
             method: 'POST',
             body: formData
         });
-        
+
         // if (!resp.ok) throw await resp.json();
         if (!resp.ok) return null;
 

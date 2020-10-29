@@ -24,7 +24,7 @@ export const UploadSuccess = () => {
                 <p>Upload Successfully!</p>
             </div>
             <div className="success-img">
-                <img className="upload-image" src={interestelar} alt="interestelar"/>
+                <img className="upload-image" src="https://res.cloudinary.com/emasesosos/image/upload/v1603983074/ucdkzlmc4qudgsdnrjzf.jpg" alt="interestelar"/>
             </div>
             <div className="success-link">
                 <form action="">

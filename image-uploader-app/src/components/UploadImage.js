@@ -1,18 +1,13 @@
 import React from 'react';
 import logo from './../assets/img/image.svg';
 
-export const UploadImage = () => {
+export const UploadImage = (props) => {
+
+    const { handleFileChange } = props;
 
     const handlePictureClick = () => {
         document.querySelector('#fileSelector').click();
     };
-
-    // const handleFileChange = (e) => {
-    //     const file = e.target.files[0];
-    //     if(file) {
-    //         dispatch(startUploading(file));
-    //     }
-    // };
 
     return (
         <div className="container-upload_image">
@@ -35,7 +30,7 @@ export const UploadImage = () => {
                     type="file"
                     name="file"
                     style={{display: 'none'}}
-                    // onChange={ handleFileChange }
+                    onChange={ handleFileChange }
                 />
                 <button 
                     className="btn-upload-file"
