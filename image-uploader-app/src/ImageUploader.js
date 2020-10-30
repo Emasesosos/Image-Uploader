@@ -11,9 +11,20 @@ export const ImageUploader = () => {
     const [uploadSuccess, setUploadSuccess] = useState(false);
     const [url, setUrl] = useState('');
 
-    const handleFileChange = async(e) => {
-
+    const handleFileChange = (e) => {
+        e.preventDefault();
         const file = e.target.files[0];
+        uploadingFile(file);
+        
+    };
+
+    const fileDrop = (e) => {
+        e.preventDefault();
+        const file = e.dataTransfer.files[0];
+        uploadingFile(file);
+    };
+
+    const uploadingFile = async(file) => {
 
         if(file) {
 
@@ -37,12 +48,12 @@ export const ImageUploader = () => {
             }
             
         }
-        
+
     };
 
     return (
         <div className="container">
-            { !uploading && !uploadSuccess && (<UploadImage handleFileChange={ handleFileChange }/>) }
+            { !uploading && !uploadSuccess && (<UploadImage handleFileChange={ handleFileChange } fileDrop={ fileDrop }/>) }
             { uploading && <Uploading /> }
             { uploadSuccess && <UploadSuccess url={ url } /> }
         </div>

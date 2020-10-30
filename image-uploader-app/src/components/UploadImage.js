@@ -3,10 +3,14 @@ import logo from './../assets/img/image.svg';
 
 export const UploadImage = (props) => {
 
-    const { handleFileChange } = props;
+    const { handleFileChange,  fileDrop } = props;
 
     const handlePictureClick = () => {
         document.querySelector('#fileSelector').click();
+    };
+
+    const dragOver = (e) => {
+        e.preventDefault();
     };
 
     return (
@@ -15,7 +19,10 @@ export const UploadImage = (props) => {
                 <h1>Upload your image</h1>
                 <p>File should be Jpeg, Png...</p>
             </div>
-            <div className="drag-drop-img">
+            <div className="drag-drop-img"
+                onDragOver={ dragOver }
+                onDrop={ fileDrop }
+            >
                 <div className="img">
                     <img src={logo} alt=""/>
                 </div>

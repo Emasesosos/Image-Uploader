@@ -3,7 +3,6 @@
 ## Technologies Used
 
 - ReactJs (Frontend)
-- Firebase (Backend)
 - Cloudinary (Image Storage)
 
 ### Story

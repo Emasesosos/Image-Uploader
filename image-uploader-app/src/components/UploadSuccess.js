@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import checkCircle from './../assets/img/check_circle.svg';
-// import interestelar from './../assets/img/interestelar.jpg';
 
 export const UploadSuccess = ({ url }) => {
 
